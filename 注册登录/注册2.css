@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+   
+a {
+    color: #000;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
+}
+a:visited {
+    color: #000;
+}
+body, button, input, select, textarea {
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,宋体;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+.icon {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    background: url("../img/icon.png") no-repeat;
+}
+i, em {
+    font-style: normal;
+}
+/*头部导航栏*/
+#homepage-header {
+    width: 100%;
+    height: 69px;
+    background: white;
+    position: fixed;
+    z-index: 9999999999;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.116);
+}
+
+/*LOGO*/
+#homepage-header #LOGO {
+    width: 100px;
+    height: 69px;
+    position: absolute;
+    top: 10px;
+    left: 75px;
+}
+#LOGO img {
+    width: 230%;
+}
+
+/*导航条*/
+.menu {
+    background: none;
+    width: 1000px;
+    height: 69px;
+    margin: 0px auto;
+    position: relative;
+    top: 13px;
+    left: 40px;
+}
+
+#homepage-header ul li {
+    list-style: none;
+    float: left;
+    margin: 10px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+.menu a {
+    display: block;
+    background-color: white;
+    text-decoration: none;
+}
+.menu a:link { color: black;}
+.menu a:visited { color: black;}
+.menu a:hover { color: black;}
+.menu a:hover::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 19px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.658);
+}
+.menu a:active { color: black;}
+
+/*右侧按钮*/
+#homepage-header #left-btn {
+    background: white;
+    width: 300px;
+    height: 69px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*搜索按钮*/
+#left-btn img {
+    width: 10%;
+    position: absolute;
+    top: 22px;
+    left: 100px; 
+    transition: 0.2s;
+}
+#left-btn img:hover {
+    transform: scale(1.15,1.15);
+}
+
+/*登录注册按钮*/
+#left-btn .btn {
+    font-weight: 400;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background: white;
+    padding: 0.25rem 0.5rem 0.32rem 0.5rem;
+    position: relative;
+    top: 22px;
+    left: 150px;
+}
+#left-btn .btn:hover {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.btn a {
+    background: none;
+    text-decoration: none;
+}
+.btn a:link { color: black;}
+.btn a:visited { color: black;}
+.btn a:hover { color: white;}
+
+
+/*主体*/
+#container {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 1px;
+    position: relative;
+    text-align: center;
+    top: 83px;
+    left: 0;
+}
+#container .container_view {
+    width: 950px;
+    background: none;
+    margin: 10px auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/*注册步骤栏*/
+#container .container_view .registeredStep {
+    margin: 20px 0 20px 0;
+    background: #ddd;
+    overflow: hidden;
+}
+#container .container_view .registeredStep ul{
+    list-style: none;
+}
+#container .container_view .registeredStep ul li {
+    float: left;
+    width: 270px;
+    padding-left: 30px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    position: relative;
+}
+#container .container_view  .registeredStep li .active {
+    color: #fff;
+    background: #58a4ed;
+}
+#container .container_view .registeredStep .clearfix::before,#container .container_view .registeredStep .fixfloat::after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+#container .container_view .registeredStep li .icon {
+    z-index: 2;
+    top: 0;
+    right: -11px;
+    width: 21px;
+    height: 40px;
+}
+#container .container_view .registeredStep li i, em {
+    font-style: normal;
+}
+#container .container_view .registeredStep li em {
+    padding-right: 10px;
+    font-family: tahoma;
+    font-size: 19px;
+}
+#container .container_view .registeredStep li.two,#container .container_view .registeredStep li.three {
+    width: 285px;
+    padding-left: 40px;
+}
+
+/*注册框*/
+#container .container_view .registeredInfo {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px 40px;
+}
+#container .container_view .registeredInfo .t {
+    font-size: 18px;
+    padding: 10px 0 10px 35px;
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+    color: #999;
+    text-align: left;
+}
+#container .container_view .registeredInfo .t .icon {
+    top: 13px;
+    left: 1px;
+    width: 20px;
+    height: 19px;
+    background-position: -29px -11px;
+}
+#container .container_view .registeredInfo .p .formbox {
+    margin-top: 30px;
+}
+#container .container_view .registeredInfo .p .formbox .inputbox {
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+}
+#container .container_view .registeredInfo .p .formbox .formName {
+    float: left;
+    font-size: 18px;
+    position: relative;
+    left: 0px;
+}
+#container .container_view .registeredInfo .p .formbox .formInput {
+    float: right;
+    position: relative;
+    right: 35px;
+    top: -4px;
+}
+#container .container_view .registeredInfo .p .formbox .formInput input {
+    width: 350px;
+    height: 35px;
+}
+
+#container .container_view .registeredInfo .p .formbox .nextbtn {
+    border: none;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#container .container_view .registeredInfo .p .formbox .nextstep {
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    width: 322px;
+    display: inline-block;
+    padding: 0;
+    font-size: 18px;
+    color: #fff;
+    background: #25b135b6;
+}
+#container .container_view .registeredInfo .p .formbox .nextstep:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #25b136;
+}
+
+
+
+/*底部*/
+#footer {
+    width: 100%;
+    height: 180px;
+    background: rgba(245, 245, 245, 0.726);
+    position: absolute;
+    bottom: 0px;
+    padding: 35px 0px 0px 0px;
+}
+
+#footer .fotbox {
+    width: 200px;
+    border-right: 1px solid rgba(128, 128, 128, 0.26);
+}
+
+#footer ul {
+    list-style: none;
+}
+#footer ul li .tips {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+#footer ul li .cards {
+    margin: 10px;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+
+/*清除漂浮*/
+.fixfloat { clear: both;}
+
+.fixfloat::before, .fixfloat::after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}

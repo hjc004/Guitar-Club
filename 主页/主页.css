@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+   
+a {
+    color: #000;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
+}
+a:visited {
+    color: #000;
+}
+/*头部导航栏*/
+#homepage-header {
+    width: 100%;
+    height: 69px;
+    background: white;
+    position: fixed;
+    z-index: 9999999999;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.116);
+}
+
+/*LOGO*/
+#homepage-header #LOGO {
+    width: 100px;
+    height: 69px;
+    position: absolute;
+    top: 10px;
+    left: 75px;
+}
+#LOGO img {
+    width: 230%;
+}
+
+/*导航条*/
+.menu {
+    background: none;
+    width: 1000px;
+    height: 69px;
+    margin: 0px auto;
+    position: relative;
+    top: 13px;
+    left: 40px;
+}
+
+#homepage-header ul li {
+    list-style: none;
+    float: left;
+    margin: 10px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+.menu a {
+    display: block;
+    background-color: white;
+    text-decoration: none;
+}
+.menu a:link { color: black;}
+.menu a:visited { color: black;}
+.menu a:hover { color: black;}
+.menu a:hover::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 19px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.658);
+}
+.menu a:active { color: black;}
+
+/*二级菜单*/
+/*
+.menu ul li ul {
+    display: none;
+    width: 80px;
+    border-top: none;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: none;
+    position: absolute;
+    top: 62px;
+    left: 201px;
+    text-align: center;
+}
+.menu ul li ul li {
+    width: 80px;
+    text-decoration: none;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+.menu ul li:hover ul li a{
+    display: block;
+    width: 75px;
+    line-height: 25px;
+    position: relative;
+    top: 0px;
+    right: 87px;
+}
+*/
+
+
+/*右侧按钮*/
+#homepage-header #left-btn {
+    background: white;
+    width: 300px;
+    height: 69px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*搜索按钮*/
+#left-btn img {
+    width: 10%;
+    position: absolute;
+    top: 22px;
+    left: 100px; 
+    transition: 0.2s;
+}
+#left-btn img:hover {
+    transform: scale(1.15,1.15);
+}
+
+/*登录注册按钮*/
+#left-btn .btn {
+    font-weight: 400;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background: white;
+    padding: 0.25rem 0.5rem 0.32rem 0.5rem;
+    position: relative;
+    top: 22px;
+    left: 150px;
+}
+#left-btn .btn:hover {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.btn a {
+    background: none;
+    text-decoration: none;
+}
+.btn a:link { color: black;}
+.btn a:visited { color: black;}
+.btn a:hover { color: white;}
+
+
+/*主体框架*/
+#container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1px;
+    position: relative;
+    text-align: center;
+    top: 83px;
+    left: 0;
+}
+
+/*图片轮播*/
+#lbt {
+    width: 1200px;
+    height: 480px;
+    overflow: hidden;
+    margin: auto;
+}
+#photo {
+    width: 31200px;
+    animation: move 112s ease infinite;
+    -webkit-animation: move 112s ease infinite;
+    -moz-animation: move 112s ease-in-out infinite;
+}
+#photo > img {
+    float: left;
+    width: 1200px;
+    height: 480px;
+}
+@keyframes move {
+    0%,2.5% {
+        margin-left: 0;
+    }
+    3.75%,6.25% {
+        margin-left: -1200px;
+    }
+    7.5%,10% {
+        margin-left: -2400px;
+    }
+    11.25%,13.75% {
+        margin-left: -3600px;
+    }
+    15%,17.5% {
+        margin-left: -4800px;
+    }
+    18.75%,21.25% {
+        margin-left: -6000px;
+    }
+    22.5%,25% {
+        margin-left: -7200px;
+    }
+    26.25%,28.75% {
+        margin-left: -8400px;
+    }
+    30%,32.5% {
+        margin-left: -9600px;
+    }
+    33.75%,36.25% {
+        margin-left: -10800px;
+    }
+    37.5%,40% {
+        margin-left: -12000px;
+    }
+    41.25%,43.75% {
+        margin-left: -13200px;
+    }
+    45%,47.5% {
+        margin-left: -14400px;
+    }
+    48.75%,51.25% {
+        margin-left: -15600px;
+    }
+    52.5%,55% {
+        margin-left: -16800px;
+    }
+    56.25%,58.75% {
+        margin-left: -18000px;
+    }
+    60%,62.5% {
+        margin-left: -19200px;
+    }
+    63.75%,66.25% {
+        margin-left: -20400px;
+    }
+    67.5%,70% {
+        margin-left: -21600px;
+    }
+    71.25%,73.75% {
+        margin-left: -22800px;
+    }
+    75%,77.5% {
+        margin-left: -24000px;
+    }
+    78.75%,81.25% {
+        margin-left: -25200px;
+    }
+    82.5%,85% {
+        margin-left: -26400px;
+    }
+    86.25%,88.75% {
+        margin-left: -27600px;
+    }
+    90%,92.5% {
+        margin-left: -28800px;
+    }
+    93.75%,96.25% {
+        margin-left: -30000px;
+    }
+    97.5%,100% {
+        margin-left: -31200px;
+    }
+}
+@-webkit-keyframes move {
+    0%,2.5% {
+        margin-left: 0;
+    }
+    3.75%,6.25% {
+        margin-left: -1200px;
+    }
+    7.5%,10% {
+        margin-left: -2400px;
+    }
+    11.25%,13.75% {
+        margin-left: -3600px;
+    }
+    15%,17.5% {
+        margin-left: -4800px;
+    }
+    18.75%,21.25% {
+        margin-left: -6000px;
+    }
+    22.5%,25% {
+        margin-left: -7200px;
+    }
+    26.25%,28.75% {
+        margin-left: -8400px;
+    }
+    30%,32.5% {
+        margin-left: -9600px;
+    }
+    33.75%,36.25% {
+        margin-left: -10800px;
+    }
+    37.5%,40% {
+        margin-left: -12000px;
+    }
+    41.25%,43.75% {
+        margin-left: -13200px;
+    }
+    45%,47.5% {
+        margin-left: -14400px;
+    }
+    48.75%,51.25% {
+        margin-left: -15600px;
+    }
+    52.5%,55% {
+        margin-left: -16800px;
+    }
+    56.25%,58.75% {
+        margin-left: -18000px;
+    }
+    60%,62.5% {
+        margin-left: -19200px;
+    }
+    63.75%,66.25% {
+        margin-left: -20400px;
+    }
+    67.5%,70% {
+        margin-left: -21600px;
+    }
+    71.25%,73.75% {
+        margin-left: -22800px;
+    }
+    75%,77.5% {
+        margin-left: -24000px;
+    }
+    78.75%,81.25% {
+        margin-left: -25200px;
+    }
+    82.5%,85% {
+        margin-left: -26400px;
+    }
+    86.25%,88.75% {
+        margin-left: -27600px;
+    }
+    90%,92.5% {
+        margin-left: -28800px;
+    }
+    93.75%,96.25% {
+        margin-left: -30000px;
+    }
+    97.5%,100% {
+        margin-left: -31200px;
+    }
+}
+@-moz-keyframes move {
+    0%,2.5% {
+        margin-left: 0;
+    }
+    3.75%,6.25% {
+        margin-left: -1200px;
+    }
+    7.5%,10% {
+        margin-left: -2400px;
+    }
+    11.25%,13.75% {
+        margin-left: -3600px;
+    }
+    15%,17.5% {
+        margin-left: -4800px;
+    }
+    18.75%,21.25% {
+        margin-left: -6000px;
+    }
+    22.5%,25% {
+        margin-left: -7200px;
+    }
+    26.25%,28.75% {
+        margin-left: -8400px;
+    }
+    30%,32.5% {
+        margin-left: -9600px;
+    }
+    33.75%,36.25% {
+        margin-left: -10800px;
+    }
+    37.5%,40% {
+        margin-left: -12000px;
+    }
+    41.25%,43.75% {
+        margin-left: -13200px;
+    }
+    45%,47.5% {
+        margin-left: -14400px;
+    }
+    48.75%,51.25% {
+        margin-left: -15600px;
+    }
+    52.5%,55% {
+        margin-left: -16800px;
+    }
+    56.25%,58.75% {
+        margin-left: -18000px;
+    }
+    60%,62.5% {
+        margin-left: -19200px;
+    }
+    63.75%,66.25% {
+        margin-left: -20400px;
+    }
+    67.5%,70% {
+        margin-left: -21600px;
+    }
+    71.25%,73.75% {
+        margin-left: -22800px;
+    }
+    75%,77.5% {
+        margin-left: -24000px;
+    }
+    78.75%,81.25% {
+        margin-left: -25200px;
+    }
+    82.5%,85% {
+        margin-left: -26400px;
+    }
+    86.25%,88.75% {
+        margin-left: -27600px;
+    }
+    90%,92.5% {
+        margin-left: -28800px;
+    }
+    93.75%,96.25% {
+        margin-left: -30000px;
+    }
+    97.5%,100% {
+        margin-left: -31200px;
+    }
+}
+
+/*视频区*/
+#movArea {
+    width: 1200px;
+    margin: 10px auto;
+    margin-top: 25spx;
+    padding: 10px;
+}
+
+#movArea .movbox {
+    width: 380px;
+    height: 300px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.103);
+    border-radius: 6px;
+    margin: 10px;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 0.55s ease;
+}
+#movArea .movbox img {
+    border-radius: 6px 6px 0 0;
+    width: 380px;
+    height: 250px;
+
+}
+#movArea .movbox span {
+    border-radius: 6px 0 0 0;
+    background: rgba(0, 0, 0, 0.479);
+    color: white;
+    padding: 1px 5px 1px 5px;
+    float: right;
+    position: relative;
+    top: -27px;
+    right: 0px;
+}
+#movArea .movbox p {
+    width: 380px;
+    height: 50px;
+    position: relative;
+    bottom: 27px;
+    line-height: 50px;
+    font-size: 17px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+#movArea .movbox:hover {
+    transform: scale(1.03,1.03);
+}
+#movArea .movbox a:hover {
+    color: rgba(0, 140, 255, 0.767);
+}
+
+
+/*图片区*/
+#phArea {
+    width: 1224px;
+    margin: auto;
+    margin-top: 25spx;
+    padding: 10px;
+}
+
+#phArea .phbox {
+    width: 200px;
+    height: 200px;
+    background: white;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.103);
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 2px;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+#phArea .phbox img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+#phArea .phbox:hover {
+    transform: scale(1.05,1.05);
+}
+
+
+/*底部*/
+#footer {
+    width: 100%;
+    background: rgba(128, 128, 128, 0.075);
+    position: relative;
+    bottom: -80px;
+    padding: 35px 0px 0px 0px;
+    
+}
+
+#footer .fotbox {
+    width: 200px;
+    border-right: 1px solid rgba(128, 128, 128, 0.26);
+}
+
+#footer ul {
+    list-style: none;
+}
+#footer ul li .tips {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+#footer ul li .cards {
+    margin: 10px;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+
+/*清除漂浮*/
+.fixfloat { clear: both;}

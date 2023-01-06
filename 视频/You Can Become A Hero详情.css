@@ -1,0 +1,416 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+   
+a {
+    color: #000;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
+}
+a:visited {
+    color: #000;
+}
+
+
+/*头部导航栏*/
+#homepage-header {
+    width: 100%;
+    height: 69px;
+    background: white;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.116);
+}
+
+/*LOGO*/
+#homepage-header #LOGO {
+    width: 100px;
+    height: 69px;
+    position: absolute;
+    top: 10px;
+    left: 75px;
+}
+#LOGO img {
+    width: 230%;
+}
+
+/*导航条*/
+.menu {
+    background: none;
+    width: 1000px;
+    height: 69px;
+    margin: 0px auto;
+    position: relative;
+    top: 13px;
+    left: 40px;
+}
+
+#homepage-header ul li {
+    list-style: none;
+    float: left;
+    margin: 10px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+.menu a {
+    display: block;
+    background-color: white;
+    text-decoration: none;
+}
+.menu a:link { color: black;}
+.menu a:visited { color: black;}
+.menu a:hover { color: black;}
+.menu a:hover::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 19px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.658);
+}
+.menu a:active { color: black;}
+
+/*右侧按钮*/
+#homepage-header #left-btn {
+    background: white;
+    width: 300px;
+    height: 69px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*搜索按钮*/
+#left-btn img {
+    width: 10%;
+    position: absolute;
+    top: 22px;
+    left: 100px; 
+    transition: 0.2s;
+}
+#left-btn img:hover {
+    transform: scale(1.15,1.15);
+}
+
+/*登录注册按钮*/
+#left-btn .btn {
+    font-weight: 400;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background: white;
+    padding: 0.25rem 0.5rem 0.32rem 0.5rem;
+    position: relative;
+    top: 22px;
+    left: 150px;
+}
+#left-btn .btn:hover {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.btn a {
+    background: none;
+    text-decoration: none;
+}
+.btn a:link { color: black;}
+.btn a:visited { color: black;}
+.btn a:hover { color: white;}
+
+.fixfloat { clear: both;}
+
+
+/*主体*/
+#container {
+    width: 100%;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    padding-top: 1px;
+    position: relative;
+    text-align: center;
+    top: 83px;
+    left: 0;
+}
+
+/*视频标题*/
+#container .movtitle {
+    display: inline-block;
+    width: 900px;
+    height: 30px;
+    margin: auto;
+    margin: 0 0 30px 0; 
+    font-size: 20px;
+    text-align: left;
+}
+
+/*视频*/
+#container .video_bg {
+    width: 902px;
+    height: 530px;
+    background: none;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.5);
+}
+/*简介*/
+#container .introduction {
+    width: 900px;
+    height: 150px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 10px 0 0px 0;
+    /*border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+    box-shadow: 0px 0px 8px rgba(128, 128, 128, 0.425);
+}
+#container .introduction .p {
+    width: 600px;
+}
+#container .introduction .p span {
+    display: block;
+    text-align: left;
+    line-height: 32px;
+    font-size: 17px;
+    margin-left: 10px;
+}
+#container .introduction .collect {
+    float: right;
+    width: 65px;
+    height: 65px;
+    position: relative;
+    bottom: 107px;
+    right: 65px;
+    cursor: pointer;
+}
+#container .introduction .ret {
+    float: right;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    bottom: 100px;
+    right: 35px;
+    cursor: pointer;
+}
+
+/*评论与推荐主体*/
+#container2 {
+    width: 900px;
+    margin: auto;
+}
+
+/*评论*/
+#container .comment {
+    float: left;
+    width: 550px;
+    margin: 27px 0 0 0;
+}
+/*发布评论*/
+#container .comment .inputbox {
+    width: 550px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+}
+#container .comment .inputbox .header {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 5px 20px 10px 10px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#container .comment .inputbox .header img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#container .comment .inputbox textarea {
+    width: 350px;
+    height: 60px;
+    font-size: 12px;
+    display: inline-block;
+    border: 1px solid #e5e9ef;
+    overflow: auto;
+    border-radius: 4px;
+    color: #555;
+    padding: 5px 10px;
+    line-height: normal;
+    outline: none;
+    resize: none;
+    font-family: inherit;
+    touch-action: manipulation;
+}
+#container .comment .inputbox textarea:hover {
+    background-color: #fff;
+    border-color: #00a1d6;
+}
+#container .comment .inputbox textarea:focus {
+    background-color: #fff;
+    border-color: #00a1d6;
+}
+#container .comment .inputbox button {
+    width: 50px;
+    height: 60px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    padding: 4px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #00a0d6c9;
+    border: 1px solid #00a1d6;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    outline: none;
+    line-height: inherit;
+    font-family: inherit;
+    overflow: visible;
+    text-transform: none;
+}
+#container .comment .inputbox button:hover {
+    background-color: #00a1d6;
+}
+
+/*评论显示*/
+#container .comment_head {
+    width: 550px;
+    padding: 0;
+    margin: 20px 0 15px 0;
+    border: none;
+    vertical-align: baseline;
+    text-align: left;
+    font-size: 20px;
+}
+
+#container .comment .commentbox {
+    width: 550px;
+    padding: 10px 0 30px 0;
+}
+#container .comment .commentbox .header {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 5px 20px 10px 10px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#container .comment .commentbox .header img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#container .comment .commentbox .userID {
+    display: flex;
+    width: 390px;
+    height: 80px;
+    padding: 6px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.308);
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+#container .comment .commentbox .userID span {
+    flex: 2;
+    font-size: 19px;
+    text-align: left;
+
+}
+#container .comment .commentbox .userID p {
+    flex: 2;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.644);
+    text-align: left;
+}
+
+/*右侧视频栏*/
+#container .recombox {
+    float: left;
+    width: 300px;
+    padding: 0px;
+    margin: 0 0 0 50px;
+}
+#container .recombox .box_header {
+    display: block;
+    width: 300px;
+    height: 40px;
+}
+#container .recombox .box_header .title {
+    display: block;
+    font-size: 20px;
+    text-align: left;
+}
+#container .recombox  .mov_box {
+    display: block;
+    width: 300px;
+    margin-bottom: 10px;
+}
+#container .recombox  .mov_box .img_box {
+    float: left;
+}
+#container .recombox  .mov_box img {
+    width: 110px;
+    height: 80px;
+    object-fit: cover;
+}
+#container .recombox  .mov_box .p_link:hover {
+    color: rgba(0, 140, 255, 0.767);
+}
+#container .recombox  .mov_box .p_link .p_box {
+    float: left;
+    width: 185px;
+    height: 80px;
+    margin: 0 0 0 5px;
+}
+#container .recombox  .mov_box .p_link .p_box p {
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+    text-align: left;
+}
+
+
+/*底部*/
+#footer {
+    width: 100%;
+    background: rgba(128, 128, 128, 0.075);
+    position: relative;
+    bottom: -80px;
+    padding: 35px 0px 0px 0px;
+    
+}
+    
+#footer .fotbox {
+    width: 200px;
+    border-right: 1px solid rgba(128, 128, 128, 0.26);
+}
+
+#footer ul {
+    list-style: none;
+}
+#footer ul li .tips {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+#footer ul li .cards {
+    margin: 10px;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+
+/*清除漂浮*/
+.fixfloat { clear: both;}
