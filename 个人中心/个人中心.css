@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+   
+a {
+    color: #000;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
+}
+a:visited {
+    color: #000;
+}
+/*头部导航栏*/
+#homepage-header {
+    width: 100%;
+    height: 69px;
+    background: white;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.116);
+}
+
+/*LOGO*/
+#homepage-header #LOGO {
+    width: 100px;
+    height: 69px;
+    position: absolute;
+    top: 10px;
+    left: 75px;
+}
+#LOGO img {
+    width: 230%;
+}
+
+/*导航条*/
+.menu {
+    background: none;
+    width: 1000px;
+    height: 69px;
+    margin: 0px auto;
+    position: relative;
+    top: 13px;
+    left: 40px;
+}
+
+#homepage-header ul li {
+    list-style: none;
+    float: left;
+    margin: 10px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+.menu a {
+    display: block;
+    background-color: white;
+    text-decoration: none;
+}
+.menu a:link { color: black;}
+.menu a:visited { color: black;}
+.menu a:hover { color: black;}
+.menu a:hover::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 19px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.658);
+}
+.menu a:active { color: black;}
+
+/*右侧按钮*/
+#homepage-header #left-btn {
+    background: white;
+    width: 300px;
+    height: 69px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*搜索按钮*/
+#left-btn img {
+    width: 10%;
+    position: absolute;
+    top: 22px;
+    left: 100px; 
+    transition: 0.2s;
+}
+#left-btn img:hover {
+    transform: scale(1.15,1.15);
+}
+
+/*登录注册按钮*/
+#left-btn .btn {
+    font-weight: 400;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background: white;
+    padding: 0.25rem 0.5rem 0.32rem 0.5rem;
+    position: relative;
+    top: 22px;
+    left: 150px;
+}
+#left-btn .btn:hover {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.btn a {
+    background: none;
+    text-decoration: none;
+}
+.btn a:link { color: black;}
+.btn a:visited { color: black;}
+.btn a:hover { color: white;}
+
+.fixfloat { clear: both;}
+
+/*主体框架*/
+#container {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 1px;
+    position: relative;
+    text-align: center;
+    top: 83px;
+    left: 0;
+}
+#container .container_view {
+    width: 1185px;
+    background: none;
+    margin: 10px auto;
+}
+
+/*左侧导航条*/
+#container .container_view .left_box {
+    width: 180px;
+    background: white;
+    float: left;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+#container .container_view .left_box ul {
+    list-style: none;
+    background: white;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+#container .container_view .left_box ul li {
+    display: block;
+    color: black;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#container .container_view .left_box ul li a{
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px；
+}
+
+#container .container_view .left_box ul li:hover {
+    background: rgba(0, 68, 255, 0.178);
+}
+
+
+
+/*右侧显示盒子*/
+/*个人资料*/
+#container .container_view .right_box {
+    width: 1000px;
+    height: 500px;
+    background: white;
+    float: left;
+    margin-left: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+#container .container_view .right_box .view {
+    box-sizing: border-box;
+    width: 900px;
+    height: 400px;
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 35px;
+}
+#container .container_view .right_box .view h1 {
+    font-size: 20px;
+    color: #3d3d3d;
+    height: 90px;
+    line-height: 90px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+#container .container_view .right_box .view .user_info .userph {
+    float: left;
+    width: 100px;
+    height: 144px;
+    text-align: center;
+    margin-right: 16px;
+} 
+#container .container_view .right_box .view .user_info .userph img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto; 
+    margin-top: 16px;
+    background: #3d3d3d;
+}
+#container .container_view .right_box .view .user_info .right_c {
+    float: left;
+    width: 700px;
+}
+#container .container_view .right_box .view .user_info .right_c .self {
+    list-style: none;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+#container .container_view .right_box .view .user_info .right_c .self ul {
+    list-style: none;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-align: left;
+    line-height: 35px;
+}
+
+
+
+/*底部*/
+#footer {
+    width: 100%;
+    height: 180px;
+    background: rgba(245, 245, 245, 0.726);
+    position: absolute;
+    bottom: -110px;
+    padding: 35px 0px 0px 0px;
+}
+
+#footer .fotbox {
+    width: 200px;
+    border-right: 1px solid rgba(128, 128, 128, 0.26);
+}
+
+#footer ul {
+    list-style: none;
+}
+#footer ul li .tips {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+#footer ul li .cards {
+    margin: 10px;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+
+/*清除漂浮*/
+.fixfloat { clear: both;}
